@@ -22,7 +22,10 @@ const messagePool = [
     "You're my sunshine on a rainy day. ☀️",
     "Muaaaaa! 😘",
     "Amakisuu! ✨",
-
+    "很开心在你的身边加油加油",
+    "一起努力吧",
+     "我只想看你笑一笑",
+    "爱你我的世界",
     "Giant Bubu hug incoming! 🤗",
 
     "A thousand kisses just for you! 💋",
