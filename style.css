@@ -1,0 +1,117 @@
+/* 1. GLOBAL STYLES & FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+body {
+    background-color: #fff5f8;
+    /* Soft pink background */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: #5a4a4a;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #ff85a2;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #ffe3e9;
+    margin-bottom: 20px;
+}
+
+
+/* 2. BUTTONS SECTION */
+
+.controls {
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    /* Rounded pill shape */
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 133, 162, 0.3);
+}
+
+button:hover {
+    background-color: #ff5c8a;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 133, 162, 0.4);
+}
+
+#playBtn {
+    background-color: #9d8df1;
+    /* Soft purple */
+    box-shadow: 0 4px 15px rgba(157, 141, 241, 0.3);
+}
+
+#playBtn:hover {
+    background-color: #7e69f0;
+}
+
+
+/* 3. MESSAGES SECTION */
+
+#messageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.message-item {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: 2px dashed #ffc0cf;
+    font-weight: 500;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.05);
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+
+/* 4. VIDEO SECTION */
+
+#videoWrapper {
+    margin-top: 30px;
+    border: 10px solid white;
+    /* Polaroid look */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+    line-height: 0;
+    /* Fixes small gap at bottom of video */
+}
+
+#myVideo {
+    max-width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/* 5. ANIMATIONS */
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
